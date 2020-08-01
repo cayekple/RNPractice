@@ -14,12 +14,11 @@ import {
 } from 'react-native-paper';
 
 export const DrawerContent = (props) => {
-
   const [isDarkTheme, setIsDarkTheme] = React.useState(false);
 
   const toggleTheme = () => {
     setIsDarkTheme(!isDarkTheme);
-  }
+  };
 
   return (
     <View style={{flex: 1}}>
@@ -64,7 +63,9 @@ export const DrawerContent = (props) => {
                 />
               )}
               label="Home"
-              onPress={() => {}}
+              onPress={() => {
+                props.navigation.navigate('Home');
+              }}
             />
             <DrawerItem
               icon={({color, size}) => (
@@ -75,7 +76,9 @@ export const DrawerContent = (props) => {
                 />
               )}
               label="Profile"
-              onPress={() => {}}
+              onPress={() => {
+                props.navigation.navigate('Profile');
+              }}
             />
             <DrawerItem
               icon={({color, size}) => (
@@ -86,7 +89,9 @@ export const DrawerContent = (props) => {
                 />
               )}
               label="Bookmarks"
-              onPress={() => {}}
+              onPress={() => {
+                props.navigation.navigate('Bookmark');
+              }}
             />
             <DrawerItem
               icon={({color, size}) => (
@@ -97,7 +102,9 @@ export const DrawerContent = (props) => {
                 />
               )}
               label="Settings"
-              onPress={() => {}}
+              onPress={() => {
+                props.navigation.navigate('Setting');
+              }}
             />
             <DrawerItem
               icon={({color, size}) => (
@@ -108,7 +115,9 @@ export const DrawerContent = (props) => {
                 />
               )}
               label="Support"
-              onPress={() => {}}
+              onPress={() => {
+                props.navigation.navigate('Support');
+              }}
             />
           </Drawer.Section>
           <Drawer.Section title="Preferences">
