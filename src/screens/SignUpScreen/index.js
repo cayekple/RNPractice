@@ -16,6 +16,8 @@ import LinearGradient from 'react-native-linear-gradient';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Feather from 'react-native-vector-icons/Feather';
 
+import {AuthContext} from '../../components/context';
+
 const SignUpScreen = ({navigation}) => {
   const [data, setData] = React.useState({
     email: '',
