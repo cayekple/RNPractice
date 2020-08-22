@@ -11,6 +11,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import HomeScreen from '../HomeScreen';
 import DetailScreen from '../DetailScreen';
 import ProfileScreen from '../ProfileScreen';
+import MapTestScreen from '../MapTestScreen';
 import ExploreScreen from '../ExploreScreen';
 
 // stack
